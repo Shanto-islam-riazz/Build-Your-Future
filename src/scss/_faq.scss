@@ -1,0 +1,65 @@
+.faq {
+  background-color: linear-gradient(to bottom, green, #0f172a);
+  padding: 4rem 1.5rem;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+  }
+
+  &__content {
+    flex: 1 1 500px;
+    color: #f1f5f9;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: #22c55e;
+    }
+  }
+
+  &__accordion {
+    details {
+      background: #0f172a;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #1e293b;
+      transition: all 0.3s ease;
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        outline: none;
+
+        &::marker {
+          color: #22c55e;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: #94a3b8;
+      }
+
+      &:hover {
+        border-color: #22c55e;
+      }
+    }
+  }
+}

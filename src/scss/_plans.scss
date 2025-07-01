@@ -1,0 +1,110 @@
+.plans {
+  background: linear-gradient(to bottom, black, green);
+  padding: 4rem 1.5rem;
+  color: #f1f5f9;
+  text-align: center;
+
+  &__header {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+
+    .plans__title {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .plans__desc {
+      font-size: 1rem;
+      color: #94a3b8;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.plan {
+  background: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 0 1px #1e293b;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  &__info,
+  &__trial {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+  }
+
+  &__btn {
+    background: #1f2937;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    border: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #334155;
+    }
+
+    &--green {
+      background: #10b981;
+
+      &:hover {
+        background: #059669;
+      }
+    }
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+
+    li {
+      text-align: left;
+      font-size: 0.95rem;
+      margin: 0.4rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+
+      &::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        color: #22c55e;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.plan--highlight {
+  background: rgb(1, 68, 1);
+  border: 2px solid #10b981;
+}

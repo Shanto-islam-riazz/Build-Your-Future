@@ -1,0 +1,73 @@
+.cta {
+  background: linear-gradient(to bottom, #0f172a, #0e2a19);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: #f1f5f9;
+  position: relative;
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: #22c55e;
+    }
+  }
+
+  &__desc {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    background: #22c55e;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #16a34a;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    animation: float 4s ease-in-out infinite;
+
+    &.js {
+      top: 10%;
+      left: 10%;
+    }
+
+    &.python {
+      bottom: 10%;
+      right: 15%;
+    }
+
+    &.gear {
+      bottom: 5%;
+      left: 5%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}

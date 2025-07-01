@@ -1,0 +1,27 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) { @content; }
+  }
+  @if $breakpoint == tab {
+    @media (max-width: 900px) { @content; }
+  }
+}

@@ -1,0 +1,84 @@
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &--green {
+    background-color: $primary;
+    color: $light;
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+
+  &--login, &--signup {
+    background: none;
+    color: $light;
+    margin-left: 10px;
+  }
+}
+
+
+.header__menu {
+  transition: all 0.3s ease-in-out;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 999;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .header__menu.show {
+    display: flex;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}

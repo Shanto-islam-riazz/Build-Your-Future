@@ -15,23 +15,31 @@
 
     <!-- Navbar start -->
 
-     <nav class="header__nav" role="navigation" aria-label="Main Navigation" >
-      <div class="header__logo">
-        <img style="width: 40px ;margin-bottom: 1rem;" src="src/images/logo-icon.webp"  alt="Logo"></div>
 
-    <button class="menu-toggle" aria-label="Toggle Navigation Menu" onclick="toggleMenu()" >☰</button>
+    <nav class="header__nav">
+  <div class="header__logo">
+    <img src="src/images/logo-icon.webp" alt="CodeFlow Logo" />
+  </div>
 
-      <ul class="header__menu">
-        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Home</a></li>
-        <li><a style="text-decoration: none;" href="#" class="btn btn--green">About Coding</a></li>
-        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Pricing</a></li>
-        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Contact Us</a></li>
-      </ul>
-      <div class="header__actions">
-        <button class="btn btn--login" aria-label="Login to your account">Login</button>
-        <button class="btn btn--signup" aria-label="Signup to create your account">Sign Up</button>
-      </div>
-    </nav> 
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <ul class="header__menu">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About Coding</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  <div class="header__actions">
+    <div class="header__language">
+  <img src="src/images/flag.webp" alt="Language Flag" />
+  <span>EN ▾</span>
+</div>
+
+    <button class="btn-login">Login</button>
+    <button class="btn-signup">Sign Up →</button>
+  </div>
+</nav>
 
     <!-- Navbar end -->
     
@@ -55,19 +63,56 @@
 
     <!-- Next to Home start -->
 
-    <section style="background-color: green;" class="steps" data-aos="fade-up">
+    <section style="background-color: black;" class="steps" data-aos="fade-up">
       <h2>Getting Started is Simple</h2>
-      <div class="steps__grid">
-        <div class="step">
+      <p>No experience? No problem. ColdFlow guides you from your first line of code to your first real project-with zero hassle.</p>
+      <!-- <div class="steps__grid"> -->
+        <!-- <div class="step">
           <h3>1. Create a Free Account</h3>
           <p>Sign up in seconds to unlock all beginner-friendly paths.</p>
           <img style=" width: 180px; border-radius: 10px" src="src/images/coffee-relax.webp" alt="Relax with coffee" loading="lazy" />
-        </div>
-        <div class="step">
+        </div> -->
+
+        
+
+        <!-- <div class="step">
           <h3>2. Select Your Track</h3>
           <p>Pick Web Dev, Python, AI and start instantly.</p>
           <img style=" width: 180px; border-radius: 10px" src="src/images/happy.webp" alt="Happy with laptop" loading="lazy">
-        </div>
+        </div> -->
+
+
+
+
+
+        
+
+
+  <div class="steps__grid">
+    <div class="step-card">
+      <div class="step-text">
+        <h3>1. Create a Free Account</h3>
+        <p>Sign up in seconds to unlock all beginner-friendly paths.</p>
+      </div>
+      <img src="src/images/coffee-relax.webp" alt="Step 1" class="step-img" loading="lazy"/>
+    </div>
+
+    <div class="step-card reverse">
+      <img src="src/images/happy.webp" alt="Step 2" class="step-img" loading="lazy"/>
+      <div class="step-text">
+        <h3>2. Select Your Track</h3>
+        <p>Pick Web Dev, Python, AI and start instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        
+
+
+
       </div>
     </section>
 
@@ -87,13 +132,13 @@
 
       <section class="why-code__features">
         <article class="feature feature--ai" data-aos="fade-up">
-          <img src="src/images/book.webp" alt="AI book suggestions" class="feature__image" />
+          <img src="src/images/book.webp" alt="AI book suggestions" class="feature__image" loading="lazy"/>
           <h2 class="feature__title">Get personalized coding suggestions</h2>
           <p class="feature__desc">An AI helper providing real-time code completions and bug fixes tailored to your project.</p>
         </article>
 
         <article class="feature feature--challenges" data-aos="fade-up" data-aos-delay="100">
-          <img src="src/images/book1.webp" alt="Coding challenges" class="feature__image"/>
+          <img src="src/images/book1.webp" alt="Coding challenges" class="feature__image" loading="lazy"/>
           <div class="feature__circle">
             <span class="badge">Stress</span>
             <span class="badge">Anxiety</span>
@@ -105,7 +150,7 @@
 
         <article class="feature feature--mentorship" data-aos="fade-up" data-aos-delay="200">
           <div class="feature__chat">
-            <img src="src/images/Container.webp" alt="Conversation" class="feature__image"/>
+            <img src="src/images/Container.webp" alt="Conversation" class="feature__image" loading="lazy"/>
 
             
           </div>
@@ -115,7 +160,7 @@
 
         <article class="feature feature--community" data-aos="fade-up" data-aos-delay="300">
           <div class="feature__network">
-            <img src="src/images/user1.webp" alt="Dev avatar 1" />
+            <img src="src/images/user1.webp" alt="Dev avatar 1" loading="lazy"/>
             
           </div>
           <h2 class="feature__title">Dev Community</h2>

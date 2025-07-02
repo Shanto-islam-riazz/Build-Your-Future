@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header">
-     <nav class="header__nav">
+     <nav class="header__nav" role="navigation" aria-label="Main Navigation">
       <div class="header__logo">
         <img style="width: 40px;margin-bottom: 1rem;" src="src/images/logo-icon.webp"  alt="Logo">CodeFlow</div>
 
@@ -23,8 +23,8 @@
         <li><a style="text-decoration: none ;" href="#" class="btn btn--green">Contact Us</a></li>
       </ul>
       <div class="header__actions">
-        <button class="btn btn--login">Login</button>
-        <button class="btn btn--signup">Sign Up</button>
+        <button class="btn btn--login" aria-label="Login to your account">Login</button>
+        <button class="btn btn--signup" aria-label="Login to your account">Sign Up</button>
       </div>
     </nav> 
     
@@ -32,7 +32,7 @@
 
 
 
-  <main>
+  <main role="main">
     <section class="hero" data-aos="fade-up">
       <h1>Learn to Code. <span>Build Your Future.</span></h1>
       <p>Join thousands mastering coding through projects and expert guidance.</p>
@@ -187,19 +187,19 @@
           <h2 class="faq__title">Frequently Asked <span>Questions</span></h2>
           <div class="faq__accordion">
             <details open>
-              <summary>What is mood tracking?</summary>
+              <summary aria-expanded="false">What is mood tracking?</summary>
               <p>Mood tracking involves logging your emotions daily to identify patterns and triggers that impact your mental well-being.</p>
             </details>
             <details>
-              <summary>How does mood tracking help?</summary>
+              <summary aria-expanded="false">How does mood tracking help?</summary>
               <p>Mood tracking helps you stay aware of your mental patterns and improve your self-awareness.</p>
             </details>
             <details>
-              <summary>Can I track more than just my mood?</summary>
+              <summary aria-expanded="false">Can I track more than just my mood?</summary>
               <p>Yes, you can also track energy, focus, and productivity metrics.</p>
             </details>
             <details>
-              <summary>Is the platform easy to use?</summary>
+              <summary aria-expanded="false">Is the platform easy to use?</summary>
               <p>Absolutely. The platform is beginner-friendly and intuitive.</p>
             </details>
           </div>

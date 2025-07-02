@@ -15,29 +15,26 @@
 
     <!-- Navbar start -->
 
-
-    <nav class="header__nav">
+<nav class="header__nav">
   <div class="header__logo">
     <img src="src/images/logo-icon.webp" alt="CodeFlow Logo" />
   </div>
-
   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-  <ul class="header__menu">
+  <ul class="header__menu" id="navMenu">
     <li><a href="#" class="active">Home</a></li>
     <li><a href="#">About Coding</a></li>
     <li><a href="#">Pricing</a></li>
     <li><a href="#">Contact Us</a></li>
+    <li class="menu-actions">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign Up</button>
+    </li>
   </ul>
-
   <div class="header__actions">
     <div class="header__language">
-  <img src="src/images/flag.webp" alt="Language Flag" />
-  <span>EN ▾</span>
-</div>
-
-    <button class="btn-login">Login</button>
-    <button class="btn-signup">Sign Up </button>
+      <img src="src/images/flag.webp" alt="Language Flag" />
+      <span>EN ▾</span>
+    </div>
   </div>
 </nav>
 

@@ -4,49 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Learn to code and build your future. Start your developer journey today!" />
+  <meta keywords="coding, programming, learn to code, web development, Python, JavaScript, AI, coding challenges, mentorship" />
+  <meta name="author" content="CodeFlow Team" />
   <title>CodeFlow - Learn to Code</title>
   <link rel="stylesheet" href="src/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
   <header class="header">
-<!--     Navbar Start -->
-     <nav class="header__nav" role="navigation" aria-label="Main Navigation">
-      <div class="header__logo">
-        <img style="width: 40px;margin-bottom: 1rem;" src="src/images/logo-icon.webp"  alt="Logo">CodeFlow</div>
 
-    <button class="menu-toggle" onClick="toggleMenu()" >☰</button>
+    <!-- Navbar start -->
+
+     <nav class="header__nav" role="navigation" aria-label="Main Navigation" >
+      <div class="header__logo">
+        <img style="width: 40px ;margin-bottom: 1rem;" src="src/images/logo-icon.webp"  alt="Logo"></div>
+
+    <button class="menu-toggle" aria-label="Toggle Navigation Menu" onclick="toggleMenu()" >☰</button>
 
       <ul class="header__menu">
-        <li><a style="text-decoration: none ;" href="#" class="btn btn--green">Home</a></li>
-        <li><a style="text-decoration: none ;" href="#" class="btn btn--green">About Coding</a></li>
-        <li><a style="text-decoration: none ;" href="#" class="btn btn--green">Pricing</a></li>
-        <li><a style="text-decoration: none ;" href="#" class="btn btn--green">Contact Us</a></li>
+        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Home</a></li>
+        <li><a style="text-decoration: none;" href="#" class="btn btn--green">About Coding</a></li>
+        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Pricing</a></li>
+        <li><a style="text-decoration: none;" href="#" class="btn btn--green">Contact Us</a></li>
       </ul>
       <div class="header__actions">
         <button class="btn btn--login" aria-label="Login to your account">Login</button>
-        <button class="btn btn--signup" aria-label="Login to your account">Sign Up</button>
+        <button class="btn btn--signup" aria-label="Signup to create your account">Sign Up</button>
       </div>
     </nav> 
-<!--     Navbar end -->
+
+    <!-- Navbar end -->
     
   </header>
 
-<!-- Home start -->
+    <!-- Home start -->
 
   <main role="main">
-    <section class="hero" data-aos="fade-up">
+    <section id="home" class="hero" data-aos="fade-up">
       <h1>Learn to Code. <span>Build Your Future.</span></h1>
       <p>Join thousands mastering coding through projects and expert guidance.</p>
       <a style="text-decoration: none;" href="#" class="btn btn--green">Get Started</a>
        <img src="src/images/js.webp" alt="JavaScript logo" class="cta__icon js" loading="lazy" />
         <img src="src/images/python.webp" alt="Python logo" class="cta__icon python" loading="lazy" />
         <img src="src/images/gear.webp" alt="Settings icon" class="cta__icon gear" loading="lazy" />
+        <img src="src/images/php.webp" alt="php icon" class="cta__icon php" loading="lazy" />
       <img src="src/images/image.webp" alt="Person learning to code" loading="lazy" />
     </section>
-<!--     Home end -->
-    
-<!-- Next to Home start -->
+
+    <!-- Home end -->
+
+    <!-- Next to Home start -->
+
     <section style="background-color: green;" class="steps" data-aos="fade-up">
       <h2>Getting Started is Simple</h2>
       <div class="steps__grid">
@@ -63,13 +71,13 @@
       </div>
     </section>
 
-<!-- Next to Home end -->
-
+    <!-- Next to Home end -->
   </main> 
 
-<!-- Why-code start -->
 
-<main class="why-code">
+  <!-- Why-Code Section start -->
+
+<main id="why" class="why-code">
       <header class="why-code__header" data-aos="fade-up">
         <h1 class="why-code__title">Why Learners Code</h1>
         <p class="why-code__subtitle">
@@ -85,8 +93,8 @@
         </article>
 
         <article class="feature feature--challenges" data-aos="fade-up" data-aos-delay="100">
+          <img src="src/images/book1.webp" alt="Coding challenges" class="feature__image"/>
           <div class="feature__circle">
-            <img src="src/images/book1.webp" alt="Coding challenges" class="feature__image"/>
             <span class="badge">Stress</span>
             <span class="badge">Anxiety</span>
             <span class="badge badge--focus">Focus</span>
@@ -97,9 +105,9 @@
 
         <article class="feature feature--mentorship" data-aos="fade-up" data-aos-delay="200">
           <div class="feature__chat">
-            <p>Hi, I’m overwhelmed with studies.</p>
-            <p><strong>What’s causing stress?</strong></p>
-            <p>Workload and exams.</p>
+            <img src="src/images/Container.webp" alt="Conversation" class="feature__image"/>
+
+            
           </div>
           <h2 class="feature__title">Expert Mentorship</h2>
           <p class="feature__desc">Chat with an experienced engineer.</p>
@@ -108,20 +116,21 @@
         <article class="feature feature--community" data-aos="fade-up" data-aos-delay="300">
           <div class="feature__network">
             <img src="src/images/user1.webp" alt="Dev avatar 1" />
-            <img src="src/images/user2.webp" alt="Dev avatar 2" />
-            <img src="src/images/user3.webp" alt="Dev avatar 3" />
-            <img src="src/images/user4.webp" alt="Dev avatar 4" />
-            <img src="src/images/user5.webp" alt="Dev avatar 5" />
+            
           </div>
           <h2 class="feature__title">Dev Community</h2>
           <p class="feature__desc">Join peer groups, open-source squads.</p>
         </article>
       </section>
     </main>
-<!--   Why-code end -->
 
-<!-- Budget Plans start -->
-     <section  class="plans" data-aos="fade-up">
+    <!-- Why-Code Section End -->
+
+
+
+    <!-- Budget Plans Start -->
+
+     <section id="pricing"  class="plans" data-aos="fade-up">
       <div class="plans__header">
         <h2 class="plans__title">Budget-friendly plans for every learner</h2>
         <p class="plans__desc">Plans designed for solo learners, career switchers, and aspiring developers — choose what fits your coding journey</p>
@@ -181,9 +190,11 @@
       </div>
     </section>
 
-<!-- Budget Plans end -->
+    <!-- Budget Plans End -->
 
-<!--   Faq start -->
+
+    <!-- Faq Section Start -->
+    
     <section class="faq" data-aos="fade-up">
       <div class="faq__wrapper">
         <div class="faq__image">
@@ -212,9 +223,12 @@
         </div>
       </div>
     </section>
-<!-- Faq end -->
 
-<!--   Cta start -->
+    <!-- Faq Section End -->
+
+    
+    <!-- Cta Section Start -->
+
     <section class="cta" data-aos="zoom-in">
       <div class="cta__container">
         <h2 class="cta__heading">Transform Your Skills Into <br><span>Real Opportunities</span></h2>
@@ -227,10 +241,13 @@
         <img src="src/images/gear.webp" alt="Settings icon" class="cta__icon gear" loading="lazy" />
       </div>
     </section>
-<!--   Cta end -->
 
-<!-- Support start -->
-    <section class="support" data-aos="fade-up">
+    <!-- Cta Section End -->
+
+
+    <!-- Support Section Start -->
+
+    <section id="contact" class="support" data-aos="fade-up">
   <div class="support__container">
     <div class="support__left">
       <img src="src/images/logo-icon.webp" alt="Site logo" class="support__logo" />
@@ -281,10 +298,12 @@
     <p>Copyright © site45.run404.com 2025, Demo – NL 12345678 – Address, City, PostCode, Netherlands | All rights reserved.</p>
   </div>
 </section>
-<!--   Support end -->
+
+  <!-- Support Section End -->
 
 
-  <script>
+
+<script>
   function toggleMenu() {
     const menu = document.querySelector('.header__menu');
     menu.classList.toggle('show');
@@ -292,10 +311,12 @@
 </script>
 
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="src/js/main.js"></script>
   <script>
-    AOS.init({ duration: 1900, once: true });
+    AOS.init({ duration: 2500, once: true });
   </script>
 
 

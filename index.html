@@ -14,7 +14,7 @@
       <div class="header__logo">
         <img style="width: 40px;margin-bottom: 1rem;" src="src/images/logo-icon.webp"  alt="Logo">CodeFlow</div>
 
-    <!-- <button class="menu-toggle"  >☰</button> -->
+    <button class="menu-toggle" onClick="toggleMenu()" >☰</button>
 
       <ul class="header__menu">
         <li><a style="text-decoration: none ;" href="#" class="btn btn--green">Home</a></li>
@@ -275,6 +275,12 @@
 </section>
 
 
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.header__menu');
+    menu.classList.toggle('show');
+  }
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

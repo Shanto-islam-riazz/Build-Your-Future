@@ -33,7 +33,6 @@ body {
   justify-content: space-between;
   border-radius: 16px;
   max-width: 90%;
-  /* margin: auto; */
   margin-top: 1rem;
 
 
@@ -127,12 +126,6 @@ body {
   }
 
    .header__actions {
-    /* flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem; */
-
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -160,10 +153,6 @@ body {
   height: 40px;
   border-radius: 2px;
 }
-
-
-
-
  
 .header {
   background: #000000;
@@ -184,11 +173,6 @@ body {
   display: flex;
 }
 
-
-
-
-
-
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -203,12 +187,6 @@ body {
   margin: 1rem 0;
   font-size: 1.2rem;
 }
-
-/* .steps {
-  background: #222;
-  padding: 3rem 2rem;
-} */
-
 
 
 
@@ -226,75 +204,7 @@ body {
 .btn--green:hover {
   background-color: rgb(0, 149, 61.835);
 }
-/* .btn--login, .btn--signup {
-  background: none;
-  color: #fff;
-  margin-left: 10px;
-} */
 
-
-
-
-
-
-
-
-
-
-
-/*  */
-
-/* .step-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #002d00;
-  color: #fff;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  gap: 2rem;
-
-  .step-img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-
-  .step-text {
-    flex: 1;
-
-    h3 {
-      color: #00ff80;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #ddd;
-    }
-  }
-
-  &.reverse {
-    flex-direction: row-reverse;
-    text-align: left;
-  }
-}
-
-@media (max-width: 768px) {
-  .step-card,
-  .step-card.reverse {
-    flex-direction: column;
-    text-align: center;
-
-    .step-img {
-      width: 100%;
-      height: auto;
-    }
-  }
-} */
-
-/*  */
 
 
 @media (max-width: 768px) {
@@ -309,10 +219,6 @@ body {
     }
   }
 }
-
-
-
-
 
 
 
@@ -379,54 +285,6 @@ body {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .hero, .step {
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  padding: 3rem 2rem;
-} */
-
-
-/* .steps h2{
-  font-size: 2rem;
-  margin-bottom: 1rem;
-
-}
-
-
-.steps__grid{
-  display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.step {
-  background: #04290a;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.step img{
-
-  max-width: 100%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  display: grid;
-} */
-
-
 
 
 
@@ -528,7 +386,6 @@ body {
 
 
 
-
 .feature__circle .badge {
   background: #334155;
   padding: 0.4rem 0.8rem;
@@ -541,7 +398,6 @@ body {
   color: black;
 }
 .feature__chat {
-  /* background: #234464; */
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -720,10 +576,6 @@ body {
   position: relative;
   
 }
-
-
-
-
 
 .cta__container {
   background: linear-gradient(to bottom, rgb(57, 179, 57), black);
@@ -928,7 +780,7 @@ body {
 /* ========== RESPONSIVE DESIGN FOR MOBILE ========== */
 
 @media (max-width: 768px) {
-  /* ✅ HEADER */
+  
   .header__nav {
     flex-direction: column;
     align-items: flex-start;
@@ -950,7 +802,7 @@ body {
     gap: 0.5rem;
   }
 
-  /* ✅ HERO SECTION */
+  
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -964,7 +816,7 @@ body {
     height: auto;
   }
 
-  /* ✅ STEPS GRID */
+  
   .steps__grid {
     grid-template-columns: 1fr;
   }
@@ -973,17 +825,17 @@ body {
     text-align: center;
   }
 
-  /* ✅ WHY CODE SECTION */
+  
   .why-code__features {
     grid-template-columns: 1fr;
   }
 
-  /* ✅ PLANS GRID */
+  
   .plans__grid {
     grid-template-columns: 1fr;
   }
 
-  /* ✅ FAQ & SUPPORT */
+  
   .faq__wrapper,
   .support__container {
     flex-direction: column;

@@ -564,11 +564,62 @@ body {
   gap: 2rem;
 }
 
-@media (max-width: 768px) {
-  .steps__grid,
-  .plans__grid,
+
+
+
+
+
+
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  .steps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  
   .why-code__features {
     grid-template-columns: 1fr;
+  }
+
+  
+  .plans__grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+  .faq__wrapper,
+  .support__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support__payments {
+    justify-content: center;
+  }
+
+  .cta__heading {
+    font-size: 1.5rem;
+  }
+
+  .cta__desc {
+    font-size: 0.95rem;
   }
 }
 

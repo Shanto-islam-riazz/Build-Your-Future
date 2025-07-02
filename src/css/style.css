@@ -22,57 +22,44 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  
-  .menu-toggle {
-    display: flex;
-  }
-
-
-  .header__menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    display: flex;
-    position: absolute;
-    
-  }
-
-  .header__menu.show {
-    display: flex;
-  }
-  
-
-  .header__nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header__actions {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} 
  
+.header {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.header__actions {
+  display: flex;
+}
 
-@media(min-width: 768px) {
-  .header__nav {
-    display: none; 
-    
-  }
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero h1 span {
+  color: #00c853;
+}
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.steps {
+  background: #222;
+  padding: 3rem 2rem;
 }
 
 
@@ -520,57 +507,34 @@ body {
   }
 }
 
-.header {
-  background: #1a1a1a;
-  padding: 1rem 2rem;
-}
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-.header__menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-.header__actions {
-  display: flex;
-}
-
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-.hero h1 {
-  font-size: 2.5rem;
-}
-.hero h1 span {
-  color: #00c853;
-}
-.hero p {
-  margin: 1rem 0;
-  font-size: 1.2rem;
-}
-
-.steps {
-  background: #222;
-  padding: 3rem 2rem;
-}
-.steps__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
 
 
+/* ========== RESPONSIVE DESIGN FOR MOBILE ========== */
 
+@media (max-width: 768px) {
+  /* ✅ HEADER */
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .header__menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
 
+  .header__actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-
-
+  /* ✅ HERO SECTION */
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -584,7 +548,7 @@ body {
     height: auto;
   }
 
-  
+  /* ✅ STEPS GRID */
   .steps__grid {
     grid-template-columns: 1fr;
   }
@@ -593,17 +557,17 @@ body {
     text-align: center;
   }
 
-  
+  /* ✅ WHY CODE SECTION */
   .why-code__features {
     grid-template-columns: 1fr;
   }
 
-  
+  /* ✅ PLANS GRID */
   .plans__grid {
     grid-template-columns: 1fr;
   }
 
-  
+  /* ✅ FAQ & SUPPORT */
   .faq__wrapper,
   .support__container {
     flex-direction: column;
@@ -635,18 +599,38 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== Responsive Header with Toggle ==== */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #00c853;
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
 .menu-toggle:hover {
   color: #00e676;
 }
+
+
+
+
+
 
 .header__menu {
 list-style: none;
@@ -679,6 +663,7 @@ color: black;
     display: block;
   }
 
+
   .header__menu {
     display: none;
     flex-direction: column;
@@ -703,7 +688,9 @@ color: black;
     transform: translateY(0);
     pointer-events: auto;
   }
-  .header__menu li a {
+
+
+.header__menu li a {
     width: 90%;
     text-align: center;
     padding: 0.8rem 0;
@@ -733,7 +720,7 @@ color: black;
   font-size: 1.3rem;
   color: #00c853;
 }
-  
+
   .header__actions {
     margin-top: 1rem;
     flex-direction: column;
@@ -744,6 +731,8 @@ color: black;
     width: 90%;
     margin: 0.4rem 0;
   }
+
+
 
 /* Login & Signup buttons */
 .header__actions button {
@@ -764,4 +753,6 @@ color: black;
 }
 
 
-
+html {
+  scroll-behavior: smooth;
+}

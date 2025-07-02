@@ -77,6 +77,24 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+    margin-top: 0.5rem;
+  }
+  .menu-actions .btn-login,
+  .menu-actions .btn-signup {
+    width: 100%;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  
+}
 
 .header__nav {
   background-color: #1a1919;

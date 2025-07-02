@@ -1017,7 +1017,7 @@ color: black;
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: #fff !important;
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0;
@@ -1026,7 +1026,7 @@ color: black;
   }
   
   .menu-toggle:hover {
-    color: #00e676;
+    color: #00e676 !important;
   }
   
   @media (max-width: 768px) {

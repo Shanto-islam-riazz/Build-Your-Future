@@ -297,7 +297,18 @@ body {
 /*  */
 
 
+@media (max-width: 768px) {
+  .step-card,
+  .step-card.reverse {
+    flex-direction: column;
+    text-align: center;
 
+    .step-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 
 
 

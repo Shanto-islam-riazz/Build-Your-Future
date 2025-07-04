@@ -1464,7 +1464,7 @@ letter-spacing: 0%;
 
 @media (max-width: 768px) {
   .faq__accordion   {
-      width: 450px;
+      width: 380px;
   }
 
   .faq__accordion details summary{

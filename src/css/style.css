@@ -123,6 +123,8 @@ body {
   .header__language img {
     width: 16px;
     height: 16px;
+    margin-left: 250px;
+    margin-top: 10px;
   }
   .btn-login, .btn-signup {
     padding: 0.15rem 0.5rem;

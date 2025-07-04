@@ -115,6 +115,10 @@ body {
   .header__language {
     font-size: 0.8rem;
     padding: 0.05rem 0.3rem;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    background: none !important;
   }
   .header__language img {
     width: 16px;

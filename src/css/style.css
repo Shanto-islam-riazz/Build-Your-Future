@@ -438,7 +438,22 @@ body {
 
 /*  */
 
+@media (max-width: 768px) {
+  .steps-progress {
+    justify-content: center;
+  }
+}
 
+@media (max-width: 768px) {
+  .arrow {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  .bar-container{
+    display: none;
+  }
+}
 
 
 @media (max-width: 768px) {

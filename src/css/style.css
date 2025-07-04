@@ -639,7 +639,14 @@ letter-spacing: 0%;
   }
 
   .step-card2 {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000f00;
+    color: white;
+    border-radius: 16px;
+    padding: 4rem;
+    margin-right: 70px ;
   }
 
     .step-img {

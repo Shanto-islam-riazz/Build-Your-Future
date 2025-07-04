@@ -2213,7 +2213,7 @@ gap: 40px;
 /* Why section */
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .why-code {
     padding: 2rem 0.5rem;
   }
@@ -2244,7 +2244,7 @@ gap: 40px;
     font-size: 1.1rem;
   }
 }
-
+ */
 
 /* Plans section */
 

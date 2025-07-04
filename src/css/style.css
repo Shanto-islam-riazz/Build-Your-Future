@@ -1461,6 +1461,28 @@ letter-spacing: 0%;
   border-color: #22c55e;
 }
 
+
+@media (max-width: 768px) {
+  .faq__accordion   {
+      width: 450px;
+  }
+
+  .faq__accordion details summary{
+        text-align: left;
+      }
+
+      .faq__accordion details summary::after {
+    margin-right: -40px;
+  }
+
+  
+  .faq__accordion details p br{
+    display: none;
+  }
+}
+
+
+
 .support {
   background-color:#000;
   color: #fff;
